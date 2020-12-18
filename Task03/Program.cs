@@ -34,7 +34,49 @@ namespace Task03
 {
     class Complex
     {
+        public double real, imaginary;
 
+        public Complex(double real, double imaginary)
+        { this.real = real; this.imaginary = imaginary; }
+
+        public double Abs() => Math.Sqrt(real * real + imaginary * imaginary);
+
+        public double Arg() => Math.Atan(imaginary / real);
+
+        public string Add(Complex num)
+        {
+            double num1 = real + num.real;
+            double num2 = imaginary + num.imaginary;
+            return GetString(num1, num2);
+        }
+
+        public string Subtract(Complex num)
+        {
+            double num1 = real - num.real;
+            double num2 = imaginary - num.imaginary;
+            return GetString(num1, num2);
+        }
+
+        public string Multiply(Complex num)
+        {
+            double n1 = real * num.real;
+            double n2 = real * num.imaginary;
+            double n3 = imaginary * num.real;
+            double n4 = -imaginary * num.imaginary;
+
+            double num1 = n1 + n4;
+            double num2 = n2 + n3;
+            return GetString(num1, num2);
+        }
+
+        public string GetString(double num1, double num2)
+        {
+            string result = $"{num1:f2}";
+            if (num2 > 0) result += "+";
+            result += $"{num2:f2}i";
+
+            return result;
+        }
     }
 
     class Program
@@ -43,20 +85,39 @@ namespace Task03
         {
             RunTask03();
         }
+
         static void RunTask03()
         {
             // TODO: ввод и обработка пользовательского ввода.
 
-            Complex a = ;
-            Complex b = ;
+            Complex a = GetComplex();
+            Complex b = GetComplex();
 
-            Console.WriteLine($"{a.Abs:f2} {b.Abs:f2}");
+            Console.WriteLine($"{a.Abs():f2} {b.Abs():f2}");
 
-            Console.WriteLine($"{a.Arg:f2} {b.Arg:f2}");
+            Console.WriteLine($"{a.Arg():f2} {b.Arg():f2}");
 
             Console.WriteLine(a.Add(b));
             Console.WriteLine(a.Subtract(b));
             Console.WriteLine(a.Multiply(b));
+        }
+
+        static Complex GetComplex()
+        {
+            string[] data = Console.ReadLine().Split();
+            Complex complex = new Complex(GetNumber(data[0]), GetNumber(data[1]));
+            return complex;
+        }
+
+        static double GetNumber(string str)
+        {
+            double number;
+            if (!double.TryParse(str, out number))
+            {
+                Console.WriteLine("Incorrect input");
+                Environment.Exit(0);
+            }
+            return number;
         }
     }
 }
