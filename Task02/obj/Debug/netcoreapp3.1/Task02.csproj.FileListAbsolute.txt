@@ -1,0 +1,13 @@
+C:\Users\dayan\Source\Repos\02module-0304seminar-classesandobjects-TeyDayana\Task02\bin\Debug\netcoreapp3.1\Task02.exe
+C:\Users\dayan\Source\Repos\02module-0304seminar-classesandobjects-TeyDayana\Task02\bin\Debug\netcoreapp3.1\Task02.deps.json
+C:\Users\dayan\Source\Repos\02module-0304seminar-classesandobjects-TeyDayana\Task02\bin\Debug\netcoreapp3.1\Task02.runtimeconfig.json
+C:\Users\dayan\Source\Repos\02module-0304seminar-classesandobjects-TeyDayana\Task02\bin\Debug\netcoreapp3.1\Task02.runtimeconfig.dev.json
+C:\Users\dayan\Source\Repos\02module-0304seminar-classesandobjects-TeyDayana\Task02\bin\Debug\netcoreapp3.1\Task02.dll
+C:\Users\dayan\Source\Repos\02module-0304seminar-classesandobjects-TeyDayana\Task02\bin\Debug\netcoreapp3.1\Task02.pdb
+C:\Users\dayan\Source\Repos\02module-0304seminar-classesandobjects-TeyDayana\Task02\obj\Debug\netcoreapp3.1\Task02.csprojAssemblyReference.cache
+C:\Users\dayan\Source\Repos\02module-0304seminar-classesandobjects-TeyDayana\Task02\obj\Debug\netcoreapp3.1\Task02.AssemblyInfoInputs.cache
+C:\Users\dayan\Source\Repos\02module-0304seminar-classesandobjects-TeyDayana\Task02\obj\Debug\netcoreapp3.1\Task02.AssemblyInfo.cs
+C:\Users\dayan\Source\Repos\02module-0304seminar-classesandobjects-TeyDayana\Task02\obj\Debug\netcoreapp3.1\Task02.csproj.CoreCompileInputs.cache
+C:\Users\dayan\Source\Repos\02module-0304seminar-classesandobjects-TeyDayana\Task02\obj\Debug\netcoreapp3.1\Task02.dll
+C:\Users\dayan\Source\Repos\02module-0304seminar-classesandobjects-TeyDayana\Task02\obj\Debug\netcoreapp3.1\Task02.pdb
+C:\Users\dayan\Source\Repos\02module-0304seminar-classesandobjects-TeyDayana\Task02\obj\Debug\netcoreapp3.1\Task02.genruntimeconfig.cache

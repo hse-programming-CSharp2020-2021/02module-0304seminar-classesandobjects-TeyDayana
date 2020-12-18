@@ -27,7 +27,12 @@ namespace Task02
 {
     class LatinChar
     {
+        public char letter = 'a';
 
+        public LatinChar()
+        {
+
+        }
     }
 
     class Program
@@ -39,11 +44,26 @@ namespace Task02
         static void RunTask02()
         {
             // TODO: ввод и обработка пользовательского ввода.
+            string[] input = Console.ReadLine().Split();
+            char minChar = GetChar(input[0]);
+            char maxChar = GetChar(input[1]);
 
-            char minChar =
-            char maxChar =
+            LatinChar latinChar;
+            for (char let = minChar; let <= maxChar; ++let)
+                Console.WriteLine(let);
+        }
 
-            LatinChar latinChar =
+        static char GetChar(string str)
+        {
+            char letter;
+
+            if (!char.TryParse(str, out letter) || !char.IsLetter(letter))
+            {
+                Console.WriteLine("Incorrect input");
+                Environment.Exit(0);
+            }
+
+            return letter;
         }
     }
 }
